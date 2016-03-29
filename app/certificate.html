@@ -1,5 +1,60 @@
-<link rel="stylesheet" href="/assets/css/print.css">
+<link rel="stylesheet" href="./assets/css/print.css">
+<style>
+	page[size='A4'] { 
+		position: relative;
+	  width: 29.7cm;
+	  height: 21cm;
+	  background-size: cover;
+	  margin: 0.5cm 0;
+	  box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+    box-sizing: border-box;
+	}
+
+	.certificate {
+	}
+
+	.certificate-name,
+	.certificate-text,
+	.certificate-date {
+		color: #5a5a59;
+		text-align: center;
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+
+	.certificate-name { 
+		font-size: 40px; 
+		top: 40%;
+	}
+
+	.certificate-date { 
+		font-size: 18px; 
+		bottom: 22%;
+	}
+
+	.certificate-text { 
+		font-size: 16px; 
+		top: 50%;
+	}
+
+	@media print {
+	  body,
+	  page[size='A4'] {
+	    margin: 0;
+	    box-shadow: 0;
+	    background: url(./assets/images/background.png);
+	    background-size: cover;
+	  }
+	}
+</style>
+
 <page size="A4">
-    <h1>Certificado de presença do #2 Meetup Maringá DevParaná</h1>
-    <p>Certifico que <span ng-bind="ctrl.user.Nome"></span> compareceuo ao evento...</p>
+	<div class="certificate">
+	  <h1 class="certificate-name" data-ng-bind="ctrl.user.Nome"></h1>
+
+	  <p class="certificate-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel eum dicta expedita! Omnis molestias animi, reprehenderit rem natus, temporibus impedit, dolores numquam velit tempore accusantium voluptatibus, beatae excepturi illum? Fugit!</p>
+
+	  <h3 class="certificate-date">Maringá - PR, 19 de Março de 2016.</h3>
+	</div>
 </page>

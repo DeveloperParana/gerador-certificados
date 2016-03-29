@@ -1,6 +1,6 @@
-(function() {
-    'use strict'
-    
-    angular
-        .module('app', ['ngRoute'])
-})()
+;(function() {
+  'use strict'
+  
+  angular
+    .module('app', ['ngRoute'])
+})();
