@@ -1,0 +1,17 @@
+{
+  "name": "certificados",
+  "version": "1.0.0",
+  "description": "Certificados Meetup DevParaná",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Gui Seek",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "^1.5.3",
+    "angular-route": "^1.5.3",
+    "bootstrap": "^3.3.6",
+    "jquery": "^2.2.2"
+  }
+}
