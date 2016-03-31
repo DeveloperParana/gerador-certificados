@@ -1,8 +1,37 @@
-body { background: rgb(204,204,204); }
-
-page[size='A4'] {
+.certificate { 
+	position: relative;
+  width: 29.7cm;
+  height: 21cm;
+  background-size: cover;
+  margin: 0.5cm 0;
   box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
   box-sizing: border-box;
+  background: url(../images/background.png);
+}
+
+.certificate-name,
+.certificate-text,
+.certificate-date {
+	color: #5a5a59;
+	text-align: center;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.certificate-name { 
+	font-size: 40px; 
+	top: 40%;
+}
+
+.certificate-date { 
+	font-size: 18px; 
+	bottom: 22%;
+}
+
+.certificate-text { 
+	font-size: 16px; 
+	top: 50%;
 }
 
 @media print {
@@ -10,7 +39,7 @@ page[size='A4'] {
   page[size='A4'] {
     margin: 0;
     box-shadow: 0;
-    background: url(../images/background.png);
+    background: url(./assets/images/background.png);
     background-size: cover;
   }
 }
